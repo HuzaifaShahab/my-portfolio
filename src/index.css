@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.dot-border {
+  position: relative;
+}
+
+.dot-border::before {
+  content: '';
+  position: absolute;
+  inset: -8%;
+  width: 116%;
+  height: 116%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    #00ff9d 10deg,
+    transparent 20deg,
+    #00ff9d 30deg,
+    transparent 40deg,
+    #00ff9d 50deg,
+    transparent 60deg,
+    #00ff9d 70deg,
+    transparent 80deg,
+    #00ff9d 90deg,
+    transparent 100deg,
+    #00ff9d 110deg,
+    transparent 120deg,
+    #00ff9d 130deg,
+    transparent 140deg,
+    #00ff9d 150deg,
+    transparent 160deg,
+    #00ff9d 170deg,
+    transparent 180deg,
+    #00ff9d 190deg,
+    transparent 200deg,
+    #00ff9d 210deg,
+    transparent 220deg,
+    #00ff9d 230deg,
+    transparent 240deg,
+    #00ff9d 250deg,
+    transparent 260deg,
+    #00ff9d 270deg,
+    transparent 280deg,
+    #00ff9d 290deg,
+    transparent 300deg,
+    #00ff9d 310deg,
+    transparent 320deg,
+    #00ff9d 330deg,
+    transparent 340deg
+  );
+  animation: rotate 12s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 100s linear infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
