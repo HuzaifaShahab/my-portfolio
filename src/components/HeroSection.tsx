@@ -23,8 +23,8 @@ const HeroSection: React.FC = () => {
                 <span className="text-green-400">Huzaifa Shahab</span>
               </h1>
               <p className="text-gray-400 text-lg mb-8 max-w-2xl">
-                I excel at crafting elegant digital experiences and
-                I am proficient in various programming languages and technologies.
+              I excel at crafting intuitive digital experiences and 
+              proficient in various programming languages and technologies.
               </p>
             </div>
 
