@@ -31,7 +31,8 @@ const HeroSection: React.FC = () => {
             {/* Download CV Button */}
             <div className="flex flex-wrap gap-4 mb-8">
               <a
-                href="#"
+                href="/resume.pdf"
+                download="Huzaifa_Shahab_Resume.pdf"
                 className="px-6 py-3 bg-transparent border-2 border-green-400 text-green-400 rounded-full hover:bg-green-400 hover:text-black transition-all duration-300 flex items-center space-x-2"
               >
                 <span>Download Resume</span>
